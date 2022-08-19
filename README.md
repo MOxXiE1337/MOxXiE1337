@@ -1,17 +1,18 @@
-'''#include <ntddk.h>
+```C
+#include <ntddk.h>
 
-VOID Unload(PDRIVER_OBJECT DriverObject) {
-    UNREFERENCED_PARAMETER(DriverObject);
-    KdPrint(("Driver Unload\n"));
+VOID DirverUnload(PDRIVER_OBJECT pDriverObject) {
+    UNREFERENCED_PARAMETER(pDriverObject);
 }
 
-NTSTATUS DriverEntry(IN PDRIVER_OBJECT DriverObject, IN PUNICODE_STRING RegistryPath) {
-    UNREFERENCED_PARAMETER(DriverObject);
-    UNREFERENCED_PARAMETER(RegistryPath);
+NTSTATUS DriverEntry(IN PDRIVER_OBJECT pDriverObject, IN PUNICODE_STRING pRegistryPath) {
+    UNREFERENCED_PARAMETER(pDriverObject);
+    UNREFERENCED_PARAMETER(pRegistryPath);
 
-    KdPrint(("DriverEntry\n"));
+    KdPrint(("Hello world\n"));
 
     DriverObject->DriverUnload = Unload;
 
     return STATUS_SUCCESS;
-}'''
+}
+```
