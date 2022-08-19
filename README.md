@@ -11,8 +11,13 @@ NTSTATUS DriverEntry(IN PDRIVER_OBJECT pDriverObject, IN PUNICODE_STRING pRegist
 
     KdPrint(("Hello world\n"));
 
-    DriverObject->DriverUnload = Unload;
+    DriverObject->DriverUnload = DirverUnload;
 
     return STATUS_SUCCESS;
 }
 ```
+#Reversing engineer
+##Good at C C++ and ASM
+
+
+
