@@ -30,7 +30,7 @@ Programing UI lib(I've restructured my library for N times)
 
 Listening music(The weeknd and Jucie WRLD)  
 
-~~Skirt and long socks~~
+~~Skirts and long socks~~
 
 # People's Teacher
 **My lua ffi tutorail: [https://space.bilibili.com/1659852340](https://space.bilibili.com/1659852340)**
