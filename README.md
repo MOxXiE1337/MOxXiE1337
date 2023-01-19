@@ -9,9 +9,9 @@ NTSTATUS DriverEntry(IN PDRIVER_OBJECT pDriverObject, IN PUNICODE_STRING pRegist
     UNREFERENCED_PARAMETER(pDriverObject);
     UNREFERENCED_PARAMETER(pRegistryPath);
 
-    KdPrint("Hello world\n");
+    KdPrint("Hello World\n");
 
-    DriverObject->DriverUnload = DirverUnload;
+    pDriverObject->DriverUnload = DirverUnload;
 
     return STATUS_SUCCESS;
 }
