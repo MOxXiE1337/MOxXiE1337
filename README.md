@@ -1,21 +1,6 @@
-```C
-#include <wdm.h>
+Retarded Reversing Engineer
 
-VOID DirverUnload(PDRIVER_OBJECT pDriverObject) {
-    UNREFERENCED_PARAMETER(pDriverObject);
-}
-
-NTSTATUS DriverEntry(IN PDRIVER_OBJECT pDriverObject, IN PUNICODE_STRING pRegistryPath) {
-    UNREFERENCED_PARAMETER(pDriverObject);
-    UNREFERENCED_PARAMETER(pRegistryPath);
-
-    DbgPrint("Hello World\n");
-
-    pDriverObject->DriverUnload = DirverUnload;
-
-    return STATUS_SUCCESS;
-}
-```
-
+discord: moxxie.1337
+steam: https://steamcommunity.com/profiles/76561199446408225
 
 
